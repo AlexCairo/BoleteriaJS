@@ -13,4 +13,4 @@ Se tomaron los siguientes criterios para realizar el programa ✍️
 
 👉 Si el pago es con efectivo, se aplicará un descuento de 10% al precio final del boleto.
 
-👉 Se mostrará todos los datos seleccionados con el cálculo respectivo, para que luego el usuario pueda realizar otra compra.
+👉 Se mostrará todos los datos seleccionados con el cálculo respectivo, para que luego el usuario pueda realizar otra compra
