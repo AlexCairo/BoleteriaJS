@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <main>
+        <div class="datos position-absolute top-50 start-50 translate-middle">
+            <div class="datosComprador ">
+                <h1>Boletería</h1>
+                <h3>Datos del Comprador</h3>
+                <p>Nombres y Apellidos: <input type="text" id="inputNombres" /></p>
+                <p>Edad: <input type="text" id="inputEdad" /></p>
+                <p>Estudiante: <input type="radio" name="Selector" id="optionSi" /> Sí <input name="Selector"
+                        type="radio" id="optionNo" checked /> No</p>
+                <p>Obra:
+                    <select id="infoObra">
+                        <option selected value="0">Seleccione una obra</option>
+                        <option value="1">Obra 1</option>
+                        <option value="2">Obra 2</option>
+                        <option value="3">Obra 3</option>
+                    </select>
+                </p>
+                <p><input type="checkbox" id="tipoDePago" /> Pago con TC</p>
+                <p>
+                    <button id="realizarCompra" type="button" class="btn btn-warning" onclick="mostrarDatos()">Realizar
+                        compra</button>
+                </p>
+            </div>
+            <div class="datosCompra">
+                <h2 class="textCompra p-3">Datos de la Compra</h2>
+                <p>Nombres y Apellidos : <span id="outputNombres"> Cargando... </span></p>
+                <p>Obra : <span id="outputObra"> Cargando...</span></p>
+                <p>Costo : <span id="outputCosto"> Cargando...</span></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
